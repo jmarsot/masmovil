@@ -6,8 +6,8 @@ pipeline {
       steps {
         script {
                  sh'''#!/bin/bash
-                    #git config --global user.email "jenkins@jenkins.com"
-                    #git config --global user.name  "Jenkins"
+                    git config --global user.email "jenkins@jenkins.com"
+                    git config --global user.name  "jenkins"
                     #git clone https://github.com/jmarsot/masmovil
                     touch prueba.txt
                     git add prueba.txt
