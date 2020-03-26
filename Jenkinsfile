@@ -12,7 +12,7 @@ pipeline {
                     touch prueba.txt
                     git add prueba.txt
                     git commit -m "Prueba"
-                    git push -u origin master
+                    git push -u origin HEAD:master
                 '''
                 } //Fin script
              } //Fin step
