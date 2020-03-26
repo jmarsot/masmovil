@@ -7,9 +7,9 @@ pipeline {
         script {
                  sh'''#!/bin/bash
                     #git remote set-url origin git@github.com:jmarsot/masmovil.git
-                    hub config --global hub.protocol ssh
-                    hub config --global user.email "jenkins@jenkins.com"
-                    hub config --global user.name  "jenkins"
+                    git config --global hub.protocol ssh
+                    git config --global user.email "jenkins@jenkins.com"
+                    git config --global user.name  "jenkins"
                     touch prueba.txt
                     git add prueba.txt
                     git commit -m "Prueba"
