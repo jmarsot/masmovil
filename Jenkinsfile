@@ -6,6 +6,7 @@ pipeline {
       steps {
         script {
                  sh'''#!/bin/bash
+                    git remote set-url origin git@github.com:jmarsot/masmovil.git
                     git config --global hub.protocol https
                     git config --global user.email "jenkins@jenkins.com"
                     git config --global user.name  "jenkins"
