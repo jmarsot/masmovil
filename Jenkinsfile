@@ -1,8 +1,8 @@
 #!groovy
 pipeline {
-    agent none
+    agent any
    stages {     
-    stage('Maven Install') {
+    stage('GitHub Test') {
       steps {
         script {
                  sh'''#!/bin/bash
